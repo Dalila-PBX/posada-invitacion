@@ -10,7 +10,8 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/posada/',
+  // base: '/posada/', //para sitios normales
+  base: '/', //para netlify
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
